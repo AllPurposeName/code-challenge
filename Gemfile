@@ -12,12 +12,19 @@ gem 'faker'
 gem 'haml-rails'
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
+gem 'better_errors'
+gem 'irbtools'
+gem 'awesome_print'
+gem 'binding_of_caller'
+gem 'sidekiq'
 
 group :development do
   gem 'spring'
 end
 
 group :development, :test do
+gem 'mailcatcher'
   gem 'capybara'
+gem 'launchy'
   gem 'pry', :require => 'pry'
 end

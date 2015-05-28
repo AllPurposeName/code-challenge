@@ -1,0 +1,8 @@
+require_relative '../test_helper'
+
+class ItemTest < ActiveSupport::TestCase
+  def test_it_can_return_a_random_method
+    assert Item.random
+    assert Item.random.is_a?(Butt)
+  end
+end
