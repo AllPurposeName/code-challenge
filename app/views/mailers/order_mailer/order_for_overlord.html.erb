@@ -1,0 +1,9 @@
+We've just had a new order for <%= @order.user %>!
+==================================================
+
+They ordered the following items:
+<% @order.items.each do |item| %>
+<%= item.name %>
+<% end %>
+
+The order comes out to $<%= @order.pretty_amount %>.
