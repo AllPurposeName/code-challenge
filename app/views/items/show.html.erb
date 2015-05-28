@@ -6,5 +6,6 @@
     <p>
       <%= @item.description %>
     </p>
+    <%= button_to "Add Order", {action: "create", controller: "orders", item: @item.id}%>
   </div>
 </div>

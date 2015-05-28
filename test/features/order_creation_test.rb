@@ -32,6 +32,7 @@ class OrderCreationTest < ActiveSupport::TestCase
       click_link_or_button("Add Order")
     end
 
-    assert_equal item, Order.last.items.first
+    assert_equal item, Order.last.items.first, "Most recent order has the item whose page it was created on."
+    assert page.has_content?("Order has been added!"), "Flash message after order creation"
   end
 end

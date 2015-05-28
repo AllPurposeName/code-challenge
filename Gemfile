@@ -16,6 +16,7 @@ gem 'less-rails-bootstrap'
 gem 'better_errors'
 gem 'irbtools'
 gem 'awesome_print'
+gem 'binding_of_caller'
 
 group :development do
   gem 'spring'
@@ -23,5 +24,6 @@ end
 
 group :development, :test do
   gem 'capybara'
+gem 'launchy'
   gem 'pry', :require => 'pry'
 end
