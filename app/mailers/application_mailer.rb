@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default "storedom@example.com"
+  default from: "storedom-minion@example.com"
   layout 'mailer'
 end

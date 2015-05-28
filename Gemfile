@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'jquery-rails'
 gem 'rails', '4.1.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
@@ -17,12 +16,14 @@ gem 'better_errors'
 gem 'irbtools'
 gem 'awesome_print'
 gem 'binding_of_caller'
+gem 'sidekiq'
 
 group :development do
   gem 'spring'
 end
 
 group :development, :test do
+gem 'mailcatcher'
   gem 'capybara'
 gem 'launchy'
   gem 'pry', :require => 'pry'
