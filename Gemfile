@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'jquery-rails'
 gem 'rails', '4.1.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
@@ -12,6 +13,9 @@ gem 'faker'
 gem 'haml-rails'
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
+gem 'better_errors'
+gem 'irbtools'
+gem 'awesome_print'
 
 group :development do
   gem 'spring'
