@@ -9,7 +9,7 @@ class OrdersController < ApplicationController
 
   def create
     order = Item.find_by(id: params[:item]).orders.create(user_id: User.first.id)
-    OrderEmailWorker.perform_async(order)
+    OrderEmailWorker.perform_async(order.id)
     flash[:ordercomplete] = "Order has been added!"
     redirect_to order_path(order)
   end
